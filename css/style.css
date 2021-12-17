@@ -1,0 +1,221 @@
+@media screen and (min-width: 480px){
+  .text{
+    margin: 0 auto;
+    width:60%
+}
+  .trimming {
+      overflow: hidden;
+      position: relative;
+      padding-top: 30%;
+      /* margin-bottom: 5px; */
+    }
+
+  .photo {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+}
+
+@font-face {
+  font-family: "源ノ明朝";
+  src: url("../font/SourceHanSerif-Regular.woff") format("woff"), url("../font/SourceHanSerif-Regular.otf") format("opentype");
+}
+
+body{
+ font-family: Lato, "Noto Sans Japanese", "游ゴシック Medium", 游ゴシック体, "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+ background-image: url("../images/2002.jpg");
+ margin:0;
+ -webkit-font-smoothing: antialiased;
+}
+
+/*
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arapey, 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0px;
+    padding: 0px;
+}
+*/
+
+.webfont .ttlFont {
+  font-family: "源ノ明朝", serif;
+  font-weight: normal;
+}
+
+ h1{
+  font-size:0.9em;
+  line-height: 2em;
+  margin: 0;
+}
+
+h2{
+  font-size:1.3em;
+  line-height: 2em;
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+h2:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+    width: 22px;
+  height: 1px;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+
+h3{
+  font-size:1.3em;
+  line-height: 1.5em;
+  font-weight: normal;
+}
+
+p{
+  margin: 0;
+}
+
+.filter {
+ background: #000000;
+}
+
+.filter-img {
+ display: block;
+ opacity: .5;
+}
+
+ .photo-text{
+   position: relative;
+   margin: 0;
+ }
+
+ .photo-text span{
+   position: absolute;
+   color: #ffffff;
+   font-size: 1.5em;
+   font-weight: bold;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%,-50%);
+   -webkit-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);
+   margin:0;
+   padding:0;
+ }
+
+ .photo-text img {
+   width: 100%;
+   }
+
+.text{
+  font-size: 1em;
+  padding: 0px 20px 20px 20px;
+  line-height: 1.5em;
+}
+
+.main{
+   width:100%;
+}
+
+.head{
+  background-color: #000;
+  color: #fff;
+  padding: 0 0 0 5px;
+  margin: 0;
+ }
+
+.left{
+ padding: 20px 20px 30px 20px;
+ background-color: #ffffcc;
+}
+
+.heading{
+   text-align: center;
+}
+
+.map{
+ padding: 20px 0px 0px 0px;
+ background-color: #ffffff;
+ text-align: center;
+}
+
+.pict{
+  position: relative;
+  top: 14px;
+}
+
+.bottom{
+  padding: 50px 0;
+}
+
+.button {
+    width:300px;
+    font-size:1em;
+    font-weight:bold;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    padding:8px 0 10px;
+    color:#fff;
+    background-color:#ff9900;
+    border-radius:30px;
+    margin: auto;
+}
+
+a.button2 {
+    width:220px;
+    font-size:0.8em;
+    font-weight:bold;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    padding:4px 0 5px 0;
+    color:#fff;
+    background-color:#000000;
+    border-radius:30px;
+    margin: auto;
+}
+
+a.btn{
+  width:220px;
+  padding:6px 0 7px 0;
+  margin: auto;
+  display: block;
+  color: #fff !important;
+  background: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:0.8em;
+  border-radius: 30px;
+  text-align:center;
+  text-decoration:none !important;
+}
+a.btn:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: -3px 5px 0 0;
+  background: url("../images/icon.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+a.btn:hover {
+    background: #999999;
+}
+
+div.attention {
+  padding: 10px 0;
+}

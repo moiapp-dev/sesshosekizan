@@ -1,0 +1,23 @@
+##
+# SymlinksはCPIサーバーをご利用の場合記述が必要です。
+# CPIサーバー以外でも、mod_rewriteを有効にし、エラーがでる場合は、
+# どちらかのオプションを有効にしてください。
+##
+# CPIサーバーでACE01_2015以降のサーバー
+Options +SymLinksIfOwnerMatch
+# CPIサーバーでACE01_2011以前のサーバー
+Options +FollowSymLinks
+ 
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+ 
+# httpからの通信を、httpsにリダイレクト（www有り無し）
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*$) https://sesshosekizan.com/$1 [R=301,L]
+ 
+# httpsからの通信でwww有りの場合、www無しにリダイレクト
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^www.example.com$
+RewriteRule ^(.*)$ https://sesshosekizan.com/$1 [R=301,L]
+</IfModule>

@@ -1,0 +1,40 @@
+body, h1 {
+  margin:0;
+  padding:0;
+}
+
+body{
+  background-image: url(../img/2002.jpg);
+  background-repeat: repeat;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+header h1{
+  font-size:16px;
+}
+
+.title {
+  background-color: #ffffcc;
+  width: 400px;
+  height: 150px;
+  margin: 0 auto;
+  padding:10 10;
+}
+
+.title_left {
+  float:left;
+  widht:25%;
+}
+
+.title_middle {
+  float:left;
+  width:50%;
+}
+
+.title_right {
+  float:right;
+  width:25%;
+}
